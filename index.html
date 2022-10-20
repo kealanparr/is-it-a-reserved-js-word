@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Reserved JavaScript keywords</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="form__group field">
+			<input onsubmit=verifyKeyword(event) type="input" class="form__field" placeholder="reservedKeyWordInput" name="reservedKeyWordInput" id='reservedKeyWordInput' required />
+			<label for="reservedKeyWordInput" class="form__label">Is it a reserved JavaScript keyword?</label>
+	</div>
+
+	<div id="no" class="explainer red">
+		<p>This word either is a reserved keyword, overrides a Web API or already exists as a property and would be a confusing name</p>
+		<p>This word is best avoided for variable names!</p>
+	</div>
+
+	<div id="yes" class="explainer green">
+		<p>This word is fine!</p>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
